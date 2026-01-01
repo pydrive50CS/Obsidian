@@ -87,3 +87,5 @@
 [2026-01-01 11:18:40] [ERROR] Directory is not a git repository: /home/en1gma/Applications/AppData/Obsidian
 [2026-01-01 11:28:40] [SUCCESS] Committed changes: Auto-sync: 2026-01-01 11:28:40| Files changed: 
 [2026-01-01 11:28:40] [WARNING] Failed to push changes to remote. Check network or remote repo.
+[2026-01-01 11:30:51] [INFO] Background sync started with PID 6766
+[2026-01-01 11:30:51] [INFO] Launching Obsidian...
