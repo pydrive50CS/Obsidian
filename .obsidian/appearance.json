@@ -1,0 +1,11 @@
+{
+  "cssTheme": "Obsidianite",
+  "accentColor": "#f5cc5c",
+  "theme": "obsidian",
+  "interfaceFontFamily": "Noto Sans",
+  "textFontFamily": "",
+  "monospaceFontFamily": "",
+  "enabledCssSnippets": [
+    "page_width"
+  ]
+}

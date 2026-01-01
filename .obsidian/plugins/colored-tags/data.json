@@ -1,0 +1,35 @@
+{
+  "palette": {
+    "seed": 0,
+    "selected": "adaptive-soft",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": false
+  },
+  "knownTags": {
+    "bug-bounty": 1,
+    "dns": 2,
+    "domain-analysis": 2,
+    "dorking": 1,
+    "infrastructure": 3,
+    "lookup": 3,
+    "networking": 4,
+    "osint": 1,
+    "pentesting": 2,
+    "recon": 3,
+    "reconnaissance": 2,
+    "scanners": 5,
+    "search-operators": 3,
+    "security": 4,
+    "shodan": 6,
+    "web-app": 5,
+    "whois": 6,
+    "workflow": 6,
+    "osint/active": 1
+  },
+  "tagColors": {},
+  "_version": 4
+}
