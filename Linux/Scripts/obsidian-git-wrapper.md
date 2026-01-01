@@ -96,8 +96,8 @@ sync_repo() {
         return 1
     fi
 
-    # Capture real changed vault files vs last commit
-    changed_files=$(git diff --name-only HEAD)
+    # Capture real changes and ignore log/temp files
+    changed_files=$(git status --porcelain | awk '{print $2}' | grep -vE "^\.gitlogs|^\.gitlogs\.tmp|^\.gitlogs\.tmp|\.gitlogs|\.tmp$")
 
     if [[ -n "$changed_files" ]]; then
         git add .
