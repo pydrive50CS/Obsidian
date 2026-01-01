@@ -96,24 +96,19 @@ sync_repo() {
         return 1
     fi
 
-    # Capture changed files before staging
-    changed_files=$(git status --porcelain | grep -v ".gitlogs" | awk '{print $2}')
+    # Capture real changed vault files vs last commit
+    changed_files=$(git diff --name-only HEAD)
 
     if [[ -n "$changed_files" ]]; then
         git add .
 
         local commit_message="Auto-sync: $(date '+%Y-%m-%d %H:%M:%S') | Files changed: $changed_files"
 
-        if git commit -m "$commit_message" >/dev/null 2>&1; then
-            log SUCCESS "Committed changes: $commit_message"
-            if git push >/dev/null 2>&1; then
-                log SUCCESS "Pushed changes to remote repository"
-            else
-                log WARNING "Failed to push changes to remote. Check network or remote repo."
-            fi
-        else
-            log WARNING "Nothing to commit or commit failed"
-        fi
+        git commit -m "$commit_message" >/dev/null 2>&1
+        log SUCCESS "Committed changes: $commit_message"
+
+        git push >/dev/null 2>&1 && log SUCCESS "Pushed changes to remote repository" \
+        || log WARNING "Failed to push changes"
     else
         log INFO "No changes detected to sync"
     fi
@@ -155,5 +150,4 @@ else
 fi
 
 log INFO "Script exiting."
-
 ```
