@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Browser.md",
+                "file": "Linux/Scripts/obsidian-git-wrapper.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Browser"
+              "title": "obsidian-git-wrapper"
             }
           }
         ],
@@ -100,7 +100,8 @@
               "title": "Notebook Navigator"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "2af4f3c830b17026",
@@ -247,6 +248,7 @@
   },
   "active": "334316548e97aaa8",
   "lastOpenFiles": [
+    "Browser.md",
     "attachments/private/Mozilla-Recovery-Key_2025-06-05_pydriveupdater@gmail.com.pdf",
     "attachments/private",
     "Linux/mount.md",
@@ -256,7 +258,6 @@
     "attachments/Pasted image 20251009131003.png",
     "attachments/Pasted image 20251009124333.png",
     "attachments/Pasted image 20251009123439.png",
-    "Browser.md",
     "Linux/port.md",
     "Jmeter",
     "Linux/curl.md",
@@ -287,7 +288,6 @@
     "Pentaho/LaTeX",
     "Pentaho/Database",
     "Pentaho",
-    "attachments",
     "Pasted image 20251202111040.png",
     "QA/Pasted image 20250912094136.png",
     "QA/Pasted image 20251009123439.png",

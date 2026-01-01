@@ -1,4 +1,3 @@
-``` bash
 #!/bin/bash
 
 # ==========================================
@@ -14,7 +13,7 @@
 # CONFIGURATION
 # ----------------------------
 VAULT_DIR="$HOME/Applications/AppData/Obsidian"
-SYNC_INTERVAL=60   # in seconds
+SYNC_INTERVAL=600   # in seconds
 LOG_FILE="$VAULT_DIR/.gitlogs"
 
 # Automatically find Obsidian AppImage
@@ -96,11 +95,13 @@ sync_repo() {
         return 1
     fi
 
-    if [[ -n $(git status --porcelain) ]]; then
+        if [[ -n $(git status --porcelain | grep -v ".gitlogs") ]]; then
+        changed_files=$(git status --porcelain | awk '{print $2}')
         git add .
-        changed_files=$(git diff --name-only HEAD~1 HEAD)
-        local commit_message="Auto-sync: $(date '+%Y-%m-%d %H:%M:%S')| Files changed: $changed_files"
-        if git commit -m "$commit_message" >/dev/null 2>&1; then
+
+        local commit_message="Auto-sync: $(date '+%Y-%m-%d %H:%M:%S') | Files changed:\n$changed_files"
+
+        if git commit -m "$(echo -e "$commit_message")" >/dev/null 2>&1; then
             log SUCCESS "Committed changes: $commit_message"
             if git push >/dev/null 2>&1; then
                 log SUCCESS "Pushed changes to remote repository"
@@ -151,5 +152,3 @@ else
 fi
 
 log INFO "Script exiting."
-
-```
