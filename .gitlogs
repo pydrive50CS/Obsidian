@@ -104,3 +104,6 @@
 [2026-01-01 11:38:40] [SUCCESS] Committed changes: Auto-sync: 2026-01-01 11:38:40| Files changed: .gitlogs
 [2026-01-01 11:38:41] [SUCCESS] Pushed changes to remote repository
 [2026-01-01 11:40:53] [INFO] Obsidian exited. Cleaning up background sync...
+[2026-01-01 11:40:53] [SUCCESS] Committed changes: Auto-sync: 2026-01-01 11:40:53 | Files changed:\n.gitlogs
+[2026-01-01 11:40:54] [SUCCESS] Pushed changes to remote repository
+[2026-01-01 11:40:54] [INFO] Script exiting.
