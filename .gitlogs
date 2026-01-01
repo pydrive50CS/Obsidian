@@ -89,3 +89,6 @@
 [2026-01-01 11:28:40] [WARNING] Failed to push changes to remote. Check network or remote repo.
 [2026-01-01 11:30:51] [INFO] Background sync started with PID 6766
 [2026-01-01 11:30:51] [INFO] Launching Obsidian...
+[2026-01-01 11:30:51] [SUCCESS] Committed changes: Auto-sync: 2026-01-01 11:30:51 | Files changed:\n.gitlogs
+[2026-01-01 11:30:53] [SUCCESS] Pushed changes to remote repository
+[2026-01-01 11:31:42] [INFO] Obsidian exited. Cleaning up background sync...
