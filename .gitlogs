@@ -133,3 +133,5 @@
 [2026-01-01 11:49:41] [INFO] Script exiting.
 [2026-01-01 11:50:26] [INFO] Background sync started with PID 9639
 [2026-01-01 11:50:26] [INFO] Launching Obsidian...
+[2026-01-01 11:52:02] [SUCCESS] Committed changes: Auto-sync: 2026-01-01 11:52:02 | Files changed:\n.gitlogs
+[2026-01-01 11:52:04] [SUCCESS] Pushed changes to remote repository
