@@ -96,13 +96,15 @@ sync_repo() {
         return 1
     fi
 
-        if [[ -n $(git status --porcelain | grep -v ".gitlogs") ]]; then
-        changed_files=$(git status --porcelain | awk '{print $2}')
+    # Capture changed files before staging
+    changed_files=$(git status --porcelain | grep -v ".gitlogs" | awk '{print $2}')
+
+    if [[ -n "$changed_files" ]]; then
         git add .
 
-        local commit_message="Auto-sync: $(date '+%Y-%m-%d %H:%M:%S') | Files changed:\n$changed_files"
+        local commit_message="Auto-sync: $(date '+%Y-%m-%d %H:%M:%S') | Files changed: $changed_files"
 
-        if git commit -m "$(echo -e "$commit_message")" >/dev/null 2>&1; then
+        if git commit -m "$commit_message" >/dev/null 2>&1; then
             log SUCCESS "Committed changes: $commit_message"
             if git push >/dev/null 2>&1; then
                 log SUCCESS "Pushed changes to remote repository"
