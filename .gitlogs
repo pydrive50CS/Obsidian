@@ -149,3 +149,10 @@
 [2026-01-01 12:22:08] [SUCCESS] Pushed changes to remote repository
 [2026-01-01 12:28:47] [SUCCESS] Committed changes: Auto-sync: 2026-01-01 12:28:47| Files changed: .gitlogs
 [2026-01-01 12:28:49] [SUCCESS] Pushed changes to remote repository
+[2026-01-01 12:32:08] [SUCCESS] Committed changes: Auto-sync: 2026-01-01 12:32:08 | Files changed:\n.gitlogs
+[2026-01-01 12:32:10] [SUCCESS] Pushed changes to remote repository
+[2026-01-01 12:38:04] [INFO] Obsidian exited. Cleaning up background sync...
+[2026-01-01 12:38:04] [INFO] Script exiting.
+[2026-01-02 19:35:37] [INFO] Background sync started with PID 39534
+[2026-01-02 19:35:37] [INFO] Launching Obsidian...
+[2026-01-02 19:37:31] [INFO] Obsidian exited. Cleaning up background sync...
