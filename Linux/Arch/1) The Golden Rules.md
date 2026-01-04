@@ -97,7 +97,7 @@ rm -ri somefolder/
 - Use `rm -rf` casually
     
 - Use wildcards `*` unless you have previewed what they match
-```
+```bash
 # Preview what * will expand to
 echo /tmp/*
 ```
@@ -122,9 +122,16 @@ One typo can wipe the system.
 - Keep root sessions short
     
 - Log what you do
-    
 
-`# Confirm identity whoami id  # Use sudo only when needed sudo -v  # refresh sudo auth timestamp sudo ls -lah /root`
+```bash
+# Confirm identity
+whoami
+id
+
+# Use sudo only when needed
+sudo -v  # refresh sudo auth timestamp
+sudo ls -lah /root
+```
 
 ### MUST NOT DO
 
@@ -135,7 +142,10 @@ One typo can wipe the system.
 - Stay logged into a root shell for long periods
     
 
-`# BAD: running internet paste as root # curl ... | sudo bash`
+```bash
+# BAD: running internet paste as root
+# curl ... | sudo bash
+```
 
 > **Mental model:** Root is for surgery, not daily life.
 
@@ -162,7 +172,17 @@ If everything is a file, you can:
 
 ### Quick Proofs (Try These)
 
-`# Hardware and kernel info as "files" cat /proc/cpuinfo | less cat /proc/meminfo | less  # Devices are represented as files ls -lah /dev | less  # System settings are in /etc ls -lah /etc | less`
+```bash
+# Hardware and kernel info as "files"
+cat /proc/cpuinfo | less
+cat /proc/meminfo | less
+
+# Devices are represented as files
+ls -lah /dev | less
+
+# System settings are in /etc
+ls -lah /etc | less
+```
 
 ---
 
@@ -185,7 +205,17 @@ Guessing is amateur mode. Logs are professional mode.
 - Check service status + logs together
     
 
-`# General system log exploration journalctl -xe  # Logs for a specific service journalctl -u sshd --no-pager journalctl -u NetworkManager --since "30 minutes ago" --no-pager  # Follow logs live (like tail -f) journalctl -f`
+```bash
+# General system log exploration
+journalctl -xe
+
+# Logs for a specific service
+journalctl -u sshd --no-pager
+journalctl -u NetworkManager --since "30 minutes ago" --no-pager
+
+# Follow logs live (like tail -f)
+journalctl -f
+```
 
 ### MUST NOT DO
 
@@ -268,8 +298,14 @@ You can back up to:
     
 
 #### Simple “home backup” to a folder (starter step)
-
-`mkdir -p ~/BACKUP_HOME rsync -av --delete \   --exclude ".cache/" \   --exclude "Downloads/" \   --exclude ".local/share/Trash/" \   "$HOME/" "$HOME/BACKUP_HOME/"`
+```bash
+mkdir -p ~/BACKUP_HOME
+rsync -av --delete \
+  --exclude ".cache/" \
+  --exclude "Downloads/" \
+  --exclude ".local/share/Trash/" \
+  "$HOME/" "$HOME/BACKUP_HOME/"
+```
 
 > Note: Same-disk backups don’t protect from disk failure — but they DO protect from “oops I deleted it.”
 
@@ -291,12 +327,23 @@ Your future self is a stranger. Leave notes.
 You will forget why you changed something. Notes prevent repeated pain.
 
 ### Minimum “Change Note” Template
-
-`## Change ## Reason ## Commands ## Files Changed ## How to Roll Back ## What I Learned`
+```bash
+## Change
+## Reason
+## Commands
+## Files Changed
+## How to Roll Back
+## What I Learned
+```
 
 ### What to Document Every Time
-
-`# Always capture: date uname -a whoami pacman -Q | wc -l`
+```bash
+# Always capture:
+date
+uname -a
+whoami
+pacman -Q | wc -l
+```
 
 ---
 
@@ -320,9 +367,13 @@ Seniors don’t fear outages because they’ve rehearsed recovery.
     
 - Misconfigure a config file and restore from backup
     
-
-`# Example: stop and start a service safely systemctl status sshd --no-pager 2>/dev/null || true sudo systemctl stop sshd 2>/dev/null || true sudo systemctl start sshd 2>/dev/null || true sudo systemctl status sshd --no-pager 2>/dev/null || true`
-
+```bash
+# Example: stop and start a service safely
+systemctl status sshd --no-pager 2>/dev/null || true
+sudo systemctl stop sshd 2>/dev/null || true
+sudo systemctl start sshd 2>/dev/null || true
+sudo systemctl status sshd --no-pager 2>/dev/null || true
+```
 ---
 
 ## 1.10 Rule: Humility Beats Ego
@@ -344,9 +395,19 @@ Arrogance creates outages. Calm curiosity prevents them.
 ## 1.11 The “Senior Admin” Troubleshooting Mindset (Mini Preview)
 
 When something breaks, seniors usually do this:
+```bash
+# 1) What changed recently?
+# (check pacman logs, system logs, configs)
+sudo less /var/log/pacman.log
 
-`# 1) What changed recently? # (check pacman logs, system logs, configs) sudo less /var/log/pacman.log  # 2) What is failing right now? systemctl --failed journalctl -xe  # 3) Reduce to a simple test ping -c 2 1.1.1.1 ping -c 2 archlinux.org`
+# 2) What is failing right now?
+systemctl --failed
+journalctl -xe
 
+# 3) Reduce to a simple test
+ping -c 2 1.1.1.1
+ping -c 2 archlinux.org
+```
 > **Do one change at a time.**  
 > If you change 5 things, you will never know which one fixed it — or caused it.
 
@@ -355,13 +416,40 @@ When something breaks, seniors usually do this:
 ## 1.12 Quick “Must-Do” Checklist (Do This Today)
 
 This is your minimum foundation **before** you go deeper:
+```bash
+# Update system (Arch basics)
+sudo pacman -Syu
 
-`# Update system (Arch basics) sudo pacman -Syu  # Install essential tools you'll use daily sudo pacman -S --needed \   base-devel \   git \   curl \   wget \   rsync \   openssh \   man-db \   man-pages \   less \   tree  # Confirm you can read manuals man pacman man systemctl man journalctl`
+# Install essential tools you'll use daily
+sudo pacman -S --needed \
+  base-devel \
+  git \
+  curl \
+  wget \
+  rsync \
+  openssh \
+  man-db \
+  man-pages \
+  less \
+  tree
+
+# Confirm you can read manuals
+man pacman
+man systemctl
+man journalctl
+```
 
 ---
 
 ## 1.13 Quick “Must-Not-Do” Checklist (Avoid These Always)
 
-`- Don’t run copy-pasted commands as root without understanding. - Don’t use rm -rf unless you have inspected the target. - Don’t reboot before collecting logs (you lose evidence). - Don’t change many things at once when debugging. - Don’t keep secrets in plain text configs. - Don’t skip backups before major changes.`
+```bash
+- Don’t run copy-pasted commands as root without understanding.
+- Don’t use rm -rf unless you have inspected the target.
+- Don’t reboot before collecting logs (you lose evidence).
+- Don’t change many things at once when debugging.
+- Don’t keep secrets in plain text configs.
+- Don’t skip backups before major changes.
+```
 
 ---
