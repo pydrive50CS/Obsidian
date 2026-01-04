@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Arch/0.Arch.md",
-                "mode": "preview",
+                "file": "Linux/Arch/1) The Golden Rules.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0.Arch"
+              "title": "1) The Golden Rules"
             }
           }
         ]
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 440.5
+    "width": 440.5,
+    "collapsed": true
   },
   "right": {
     "id": "279416c7625b4660",
@@ -233,8 +234,8 @@
   },
   "active": "334316548e97aaa8",
   "lastOpenFiles": [
-    "Linux/Arch/3)Arch Starter Kit- Your Learning Workspace.md",
     "Linux/Arch/0.Arch.md",
+    "Linux/Arch/3)Arch Starter Kit- Your Learning Workspace.md",
     "Linux/Arch/2) The Linux Mental Model.md",
     "Linux/Arch/1) The Golden Rules.md",
     "Linux/Arch/6) systemd & Journald (Services + Logs).md",
