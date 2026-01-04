@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAPT/Active Scanning.md",
+                "file": "VAPT/Nmap.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Active Scanning"
+              "title": "Nmap"
+            }
+          },
+          {
+            "id": "1fad32435bdac6f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "VAPT/Service version enumeration.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Service version enumeration"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -231,10 +246,12 @@
       "notebook-navigator:Notebook Navigator": false
     }
   },
-  "active": "334316548e97aaa8",
+  "active": "1fad32435bdac6f5",
   "lastOpenFiles": [
-    "VAPT/Reconnaissance.md",
+    "VAPT/Service version enumeration.md",
+    "VAPT/Nmap.md",
     "VAPT/Active Scanning.md",
+    "VAPT/Reconnaissance.md",
     "VAPT/Bug Bounty Methodology.md",
     "VAPT/Google Dorking Cheat Sheet.md",
     "VAPT/DNS Lookup.md",
@@ -257,8 +274,6 @@
     "Linux/Arch/5) Permissions & Ownership (Layman + Deep).md",
     "Linux/Arch/Arch Starter Kit- Your Learning Workspace.md",
     "Linux/Arch/4) Command Line Fluency.md",
-    "Linux/Scripts/appimages.md",
-    "Linux/Archive.md",
     "Linux/Arch",
     "attachments/private/Mozilla-Recovery-Key_2025-06-05_pydriveupdater@gmail.com.pdf",
     "attachments/private",
