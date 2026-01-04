@@ -6,7 +6,6 @@ created: 2026-01-04
 ---
 title: Linux Admin Apprenticeship (Arch) — Complete In-Depth Guide + Must-Do/Don’t + Laptop Homelab + Starter Scripts
 tags: [linux, arch, sysadmin, scripting, automation, homelab, obsidian]
-created: 2026-01-04
 ---
 
 # Linux Admin Apprenticeship (Arch) — Complete In-Depth Guide
@@ -18,23 +17,23 @@ This is a **single, self-contained Obsidian note** that compiles everything from
 
 ---
 
-## Table of Contents
-- [1) The Golden Rules](#1-the-golden-rules)
-- [2) The Linux Mental Model](#2-the-linux-mental-model)
-- [3) Arch Starter Kit: Your Learning Workspace](#3-arch-starter-kit-your-learning-workspace)
-- [4) Command Line Fluency](#4-command-line-fluency)
-- [5) Permissions & Ownership (Layman + Deep)](#5-permissions--ownership-layman--deep)
-- [6) systemd & Journald (Services + Logs)](#6-systemd--journald-services--logs)
-- [7) Networking Fundamentals (Practical)](#7-networking-fundamentals-practical)
-- [8) Package Management on Arch (Pacman + AUR Safety)](#8-package-management-on-arch-pacman--aur-safety)
-- [9) Security Fundamentals (Beginner-Safe)](#9-security-fundamentals-beginner-safe)
-- [10) Laptop-Only Homelab Projects](#10-laptop-only-homelab-projects)
-- [11) The #1 Must-Have Script: Healthcheck + Triage Report](#11-the-1-must-have-script-healthcheck--triage-report)
-- [12) Scripting Standards (So You Don’t Hurt Yourself)](#12-scripting-standards-so-you-dont-hurt-yourself)
-- [13) Troubleshooting Method (What Seniors Do)](#13-troubleshooting-method-what-seniors-do)
-- [14) Weekly Routine (30 Minutes That Makes You Good)](#14-weekly-routine-30-minutes-that-makes-you-good)
-- [15) Break & Fix Lab Ideas](#15-break--fix-lab-ideas)
-- [16) Roadmap (Week-by-Week)](#16-roadmap-week-by-week)
+## ## Table of Contents
+- [[1) The Golden Rules]]
+- [[2) The Linux Mental Model]]
+- [[3)Arch Starter Kit- Your Learning Workspace|3) Arch Starter Kit- Your Learning Workspace]]
+- [[4) Command Line Fluency]]
+- [[5) Permissions & Ownership (Layman + Deep)]]
+- [[6) systemd & Journald (Services + Logs)]]
+- [[7) Networking Fundamentals (Practical)]]
+- [[8) Package Management on Arch (Pacman + AUR Safety)]]
+- [[9) Security Fundamentals (Beginner-Safe)]]
+- [[10) Laptop-Only Homelab Projects]]
+- [[11) The #1 Must-Have Script - Healthcheck + Triage Report]]
+- [[12) Scripting Standards (So You Don’t Hurt Yourself)]]
+- [[13) Troubleshooting Method (What Seniors Do)]]
+- [[14) Weekly Routine (30 Minutes That Makes You Good)]]
+- [[15) Break & Fix Lab Ideas]]
+- [[16) Roadmap (Week-by-Week)]]](#16-roadmap-week-by-week)
 
 ---
 
