@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "70d57f2e8c4e002c",
+        "id": "2418c02236a7bf45",
         "type": "tabs",
         "children": [
           {
-            "id": "334316548e97aaa8",
+            "id": "d3da8601fe69f9ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -85,7 +85,8 @@
               "title": "Notebook Navigator"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "2af4f3c830b17026",
@@ -230,15 +231,16 @@
       "notebook-navigator:Notebook Navigator": false
     }
   },
-  "active": "334316548e97aaa8",
+  "active": "d3da8601fe69f9ce",
   "lastOpenFiles": [
-    "VAPT/Reconnaissance/Reconnaissance.md",
-    "VAPT/Reconnaissance/Fingerprinting.md",
     "VAPT/Reconnaissance/Service version enumeration.md",
-    "VAPT/Reconnaissance/Active Scanning.md",
+    "VAPT/Reconnaissance/Reconnaissance.md",
     "VAPT/Reconnaissance/Nmap.md",
-    "VAPT/Remediation Plan Template.md",
+    "VAPT/Reconnaissance/Fingerprinting.md",
+    "VAPT/Reconnaissance/Active Scanning.md",
     "VAPT/Classwork.md",
+    "Tags",
+    "VAPT/Remediation Plan Template.md",
     "VAPT/Reconnaissance",
     "attachments/nmap.png",
     "thumbnails/resized/8e61bb12319eed1ffabda57b74f96343_86cf658e.webp",
@@ -267,7 +269,6 @@
     "Linux/Arch/12) Scripting Standards (So You Don’t Hurt Yourself).md",
     "Linux/Arch/10) Laptop-Only Homelab Projects.md",
     "Linux/Arch/9) Security Fundamentals (Beginner-Safe).md",
-    "Linux/Arch/8) Package Management on Arch (Pacman + AUR Safety).md",
     "Linux/Arch",
     "attachments/private/Mozilla-Recovery-Key_2025-06-05_pydriveupdater@gmail.com.pdf",
     "attachments/private",
@@ -275,7 +276,6 @@
     "Jmeter",
     "Untitled.canvas",
     "attachments/Recording 20260101104946.m4a",
-    "VAPT",
     "Pasted image 20251202111040.png",
     "QA/Pasted image 20250912094136.png",
     "QA/Pasted image 20251009123439.png",

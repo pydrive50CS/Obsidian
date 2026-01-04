@@ -66,7 +66,7 @@ Knowing the OS is the final piece of the puzzle before exploitation:
 
 ---
 
-## 📁 Obsidian Note: The "Fingerprint" Checklist
+## 📁 The "Fingerprint" Checklist
 
 > [!CHECKLIST] Identification Markers
 > 

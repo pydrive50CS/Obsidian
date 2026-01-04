@@ -184,3 +184,8 @@
 [2026-01-04 18:18:44] [SUCCESS] Committed changes: Auto-sync: 2026-01-04 18:18:44 | Files changed: .obsidian/plugins/notebook-navigator/data.json
 [2026-01-04 18:18:51] [SUCCESS] Pushed changes to remote repository
 [2026-01-04 18:26:59] [INFO] Obsidian exited. Cleaning up background sync...
+[2026-01-04 18:26:59] [SUCCESS] Committed changes: Auto-sync: 2026-01-04 18:26:59 | Files changed: .obsidian/plugins/colored-tags/data.json
+[2026-01-04 18:27:02] [SUCCESS] Pushed changes to remote repository
+[2026-01-04 18:27:02] [INFO] Script exiting.
+[2026-01-04 18:27:25] [INFO] Background sync started with PID 13190
+[2026-01-04 18:27:25] [INFO] Launching Obsidian...

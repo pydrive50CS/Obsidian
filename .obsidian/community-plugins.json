@@ -4,8 +4,6 @@
   "omnisearch",
   "obsidian-importer",
   "cm-editor-syntax-highlight-obsidian",
-  "colored-tags",
-  "code-styler",
   "calendar",
   "ninja-cursor",
   "cmdr",
@@ -14,5 +12,7 @@
   "obsidian-icons-plugin",
   "iconic",
   "featured-image",
+  "code-styler",
+  "colored-tags",
   "obsidian-style-settings"
 ]

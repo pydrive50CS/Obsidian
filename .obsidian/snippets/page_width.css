@@ -3,16 +3,15 @@ body {
   --file-line-width: 1000px;
 }
 
+/* Fix invisible inline code inside task list items */
 .task-list-item code {
-  color: var(--text-accent);
+  color: var(--text-normal) !important;
   background-color: var(--background-secondary);
-  padding: 0.1em 0.3em;
-  border-radius: 4px;
   opacity: 1 !important;
-  font-weight: 500;
 }
 
-/* Prevent task dimming from affecting inline code */
-.task-list-item {
-  opacity: 1;
+/* Extra safety: prevent theme opacity tricks */
+.task-list-item .cm-inline-code,
+.task-list-item code span {
+  color: var(--text-normal) !important;
 }

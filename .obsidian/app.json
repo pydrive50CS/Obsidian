@@ -4,5 +4,6 @@
   "attachmentFolderPath": "attachments",
   "defaultViewMode": "preview",
   "showLineNumber": false,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "showInlineTitle": true
 }
