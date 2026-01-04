@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Arch/3)Arch Starter Kit- Your Learning Workspace.md",
+                "file": "Linux/Arch/0.Arch.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3)Arch Starter Kit- Your Learning Workspace"
+              "title": "0.Arch"
             }
           }
         ]
@@ -233,8 +233,8 @@
   },
   "active": "334316548e97aaa8",
   "lastOpenFiles": [
-    "Linux/Arch/0.Arch.md",
     "Linux/Arch/3)Arch Starter Kit- Your Learning Workspace.md",
+    "Linux/Arch/0.Arch.md",
     "Linux/Arch/2) The Linux Mental Model.md",
     "Linux/Arch/1) The Golden Rules.md",
     "Linux/Arch/6) systemd & Journald (Services + Logs).md",
