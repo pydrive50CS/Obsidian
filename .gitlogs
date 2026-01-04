@@ -161,3 +161,5 @@
 [2026-01-02 19:37:32] [INFO] Script exiting.
 [2026-01-04 16:18:18] [INFO] Background sync started with PID 5388
 [2026-01-04 16:18:18] [INFO] Launching Obsidian...
+[2026-01-04 16:28:18] [SUCCESS] Committed changes: Auto-sync: 2026-01-04 16:28:18 | Files changed: .obsidian/plugins/colored-tags/data.json
+[2026-01-04 16:28:20] [SUCCESS] Pushed changes to remote repository

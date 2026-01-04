@@ -10,6 +10,7 @@
     "highTextContrast": false
   },
   "knownTags": {
+    "arch": 1,
     "automation": 1,
     "bash": 2,
     "bug-bounty": 1,
@@ -22,11 +23,13 @@
     "linux": 5,
     "lookup": 3,
     "networking": 4,
+    "obsidian": 6,
     "osint": 1,
     "pentesting": 2,
     "recon": 3,
     "reconnaissance": 2,
     "scanners": 5,
+    "scripting": 7,
     "search-operators": 3,
     "security": 4,
     "shodan": 6,
