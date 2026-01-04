@@ -82,7 +82,7 @@ This is the most detailed part of Active Recon. We want to know the "Flavor" of 
 
 These are the industry-standard tools used for these steps:
 
-1. **Nmap:** The "Gold Standard." It can do everything from discovery to version detection.
+1. ***[[Nmap]]:*** The "Gold Standard." It can do everything from discovery to version detection.
     
 2. **Masscan:** Used for incredibly fast scanning of huge networks (can scan the whole internet in under 6 minutes).
     
