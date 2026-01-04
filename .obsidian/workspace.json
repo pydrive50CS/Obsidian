@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Scripts/tar.gz installation.md",
+                "file": "Linux/Linux.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tar.gz installation"
+              "title": "Linux"
             }
           }
         ],
@@ -248,11 +248,14 @@
   },
   "active": "334316548e97aaa8",
   "lastOpenFiles": [
+    "Linux/mount.md",
+    "Linux/Linux.md",
+    "Linux/Linux.md",
+    "Linux/Scripts/tar.gz installation.md",
     "Linux/Scripts/obsidian-git-wrapper.md",
     "Browser.md",
     "attachments/private/Mozilla-Recovery-Key_2025-06-05_pydriveupdater@gmail.com.pdf",
     "attachments/private",
-    "Linux/mount.md",
     "Jmeter/CheatSheet.md",
     "attachments/Pasted image 20250912094136.png",
     "attachments/Mozilla-Recovery-Key_2025-06-05_pydriveupdater@gmail.com.pdf",
@@ -282,9 +285,6 @@
     "Linux/Application with functions.md",
     "VAPT",
     "Cheat Sheet.md",
-    "Linux/Scripts/tar.gz installation.md",
-    "Wishlist.md",
-    "Linux/Obsidian Git Launch.md",
     "LaTeX",
     "Pentaho/LaTeX",
     "Pentaho/Database",
